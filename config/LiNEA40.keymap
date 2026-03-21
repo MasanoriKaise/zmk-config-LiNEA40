@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -71,8 +71,8 @@
             key-positions = <13 12>;
         };
 
-        CenterClick {
-            bindings = <&mkp MB3>;
+        LeftClick {
+            bindings = <&mkp MB1>;
             key-positions = <17 16>;
         };
 
@@ -89,6 +89,11 @@
         ClickNext {
             bindings = <&mkp MB5>;
             key-positions = <27 28>;
+        };
+
+        CenterClick {
+            bindings = <&mkp MB3>;
+            key-positions = <16 18>;
         };
     };
 
