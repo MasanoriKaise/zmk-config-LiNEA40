@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -114,11 +114,6 @@
         braces {
             bindings = <&braces>;
             key-positions = <40 39>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <10 11>;
         };
 
         esc {
@@ -184,10 +179,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans     &trans     &trans
             >;
         };
 
@@ -208,10 +203,10 @@
 
         CURSOR {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans    &trans          &trans        &trans           &trans
-&trans  &trans  &trans  &trans  &trans                    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans  &trans                    &kp HOME  &kp PG_DN       &kp PG_UP     &kp END          &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                    &trans        &trans           &trans
+&trans  &trans  &trans  &trans  &trans                    &kp LS(LC(TAB))  &kp LA(W)       &kp LA(W)     &kp LC(TAB)      &trans
+&trans  &trans  &trans  &trans  &trans                    &kp LEFT         &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans  &trans  &trans                    &kp HOME         &kp PG_DN       &kp PG_UP     &kp END          &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                           &trans        &trans           &trans
             >;
         };
 
